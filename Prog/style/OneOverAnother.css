@@ -1,0 +1,23 @@
+.img-face
+{
+    width: 100%;
+    height: 100%;
+}
+.img-hs
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    transform: rotate(90deg);
+}
+.img-mi
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    transform: rotate(180deg);
+}

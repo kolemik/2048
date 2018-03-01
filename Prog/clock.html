@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Clock</title>
+
+  <link href="style/OneOverAnother.css" rel="stylesheet" type="text/css">
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="clock.svg">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+<div class="container">
+    <div class="heading">
+    <h1 class="title">HowToClock</h1>
+    <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+    </div>
+    </div>
+
+    <div class="above-game">
+        <p class="game-intro">Guess the <strong>time!</strong></p>
+        <a class="game-button restart-button">New Game</a>
+    </div>
+
+    <div class="game-container">
+    <div class="game-message">
+        <p></p>
+        <div class="lower">
+            <a class="keep-playing-button">Keep going</a>
+            <a class="retry-button">Try again</a>
+        </div>
+    </div>
+
+    <div class="img">
+        <img src="BlankClock.png" class="img-face" />
+        <img src="hsHand.png" class="img-hs" />
+        <img src="miHand.png" class="img-mi" />
+    </div>
+    </div>
+
+    <div class="below-game">
+        <div class="grid-row">
+            <div class="grid-cell">
+                <a class="game-button">20:30</a>
+            </div>
+            <div class="grid-cell">
+                <a class="game-button">05:10</a>
+            </div>
+            <div class="grid-cell">
+                <a class="game-button">14:20</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+-->
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+</body>
+</html>

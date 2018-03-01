@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<style>
+img {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+.imgA1 {
+  z-index: 1;
+}
+.imgB1 {
+  z-index: 3;
+}
+</style>
+<body>
+
+<canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3; z-index: 5;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+
+function rotate() {
+	var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.fillStyle = "white";
+	ctx.strokeStyle="white";
+	ctx.fillRect(50, 20, 100, 50);
+	ctx.rect(50, 20, 100, 50);
+	ctx.rotate(20 * Math.PI / 180);
+	ctx.fillStyle = "red";
+	ctx.fillRect(50, 20, 100, 50);
+}
+
+</script>
+
+<p><strong>Note:</strong> The canvas tag is not supported in Internet 
+Explorer 8 and earlier versions.</p>
+
+<p><input type="button" value="rotate" onClick="rotate();" /></p>
+
+<p>
+<img class="imgA1" src="https://placehold.it/200/333333">
+<img class="imgB1" src="https://placehold.it/100">
+</p>
+
+</body>
+</html>
